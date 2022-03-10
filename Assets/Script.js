@@ -1,12 +1,7 @@
 //Script
 //add date to header
-var today = new Date();
-var dd = String(today.getDate()).padStart(2, '0');
-var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
-var yyyy = today.getFullYear();
-var dateHead = document.querySelector("#date")
 
-today = mm + '/' + dd + '/' + yyyy;
+today = moment().format('MMMM Do YYYY')
 console.log(today);
 document.getElementById('date').innerHTML="Here is your schedule for today " + today
 
@@ -45,7 +40,7 @@ $(document).ready(function(){
     function setBackgroundForTimeOfDay() {
         for(var i=7; i<19;i++){
       const box = document.getElementById("time"+i)
-      const hours = new Date().getHours();
+      const hours = moment().hour();
       if (hours>i){
         box.style.backgroundColor= 'gray';
         box.style.opacity=.75;
