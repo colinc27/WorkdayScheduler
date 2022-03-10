@@ -19,7 +19,8 @@ THEN the text for that event is saved in local storage
 THEN the saved events persist
 
 ## Screenshots and Links
-Link: [Workday Calendar](https://colinc27.github.io/PasswordGeneratorChallengeIII/)
-![finalwebpage](./Develop/screenshot.JPG "final webpage")
+Link: [Workday Calendar](https://colinc27.github.io/WorkdayScheduler/)
+
+![finalwebpage](./Assets/Screenshot.JPG "final webpage")
 
 ## Made by Colin Christoph
