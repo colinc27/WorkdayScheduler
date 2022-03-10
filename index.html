@@ -18,21 +18,31 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./Assets/style.css" />
     <title>Work Day Scheduler</title>
   </head>
-
-  <body>
-    <header class="jumbotron">
+  <body class="">
+    <header class="jumbotron bg-primary">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
       <p id="currentDay" class="lead"></p>
     </header>
+    <h1 class="text-center pb-2" id="date"></h1>
     <div class="container">
-      <!-- Timeblocks go here -->
-    </div>
-
+      <div class="input-group" style="height: 125px">
+        <span class="input-group-text col-2 m-2 p-2 rouded">7:00 AM</span>
+        <textarea class="form-control col-8 m-2 p-2 rounded" aria-label="With textarea" id="time7"></textarea>
+        <button class="col-1 m-2 p-2 rounded bg-success" style="--bs-bg-opacity: .5" id="save" type="button">Save Items</button>
+        <button class="col-1 m-2 p-2 rounded bg-danger" style="--bs-bg-opacity: .5" id="reset" type="button">Reset Items</button>
+        </div>
+        <div class="input-group" style="height: 125px">
+          <span class="input-group-text col-2 m-2 p-2 rouded">8:00 AM</span>
+          <textarea class="form-control col-8 m-2 p-2 rounded" aria-label="With textarea" id="time8"></textarea>
+          <button class="col-1 m-2 p-2 rounded bg-success" style="--bs-bg-opacity: .5" id="save" type="button">Save Tasks</button>
+          <button class="col-1 m-2 p-2 rounded bg-danger" style="--bs-bg-opacity: .5" id="reset" type="button">Clear Tasks</button>
+          </div>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./Assets/Script.js"></script>
   </body>
 </html>
